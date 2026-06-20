@@ -1,0 +1,20 @@
+spring:
+  main:
+    web-application-type: none
+    banner-mode: off
+  ai:
+    mcp:
+      server:
+        name: hello-mcp-server
+        version: 0.0.1
+        type: SYNC
+        stdio: true
+        instructions: >
+          A beginner-friendly MCP demo server. Provides four simple tools:
+          greet (say hello to someone), get_server_time (current date and time),
+          calculate (basic arithmetic), and flip_coin (random heads or tails).
+          Great for learning how MCP tools work.
+
+logging:
+  file:
+    name: /tmp/hello-mcp-server.log
